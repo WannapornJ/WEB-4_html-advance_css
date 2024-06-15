@@ -1,0 +1,70 @@
+.hero {
+  display: flex;
+  gap: 24px;
+  background: beige;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.left > img {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px;
+}
+
+.right > button {
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 24px;
+  width: 65%;
+  padding: 12px 24px;
+  text-transform: uppercase;
+}
+
+.copy-right {
+  background: rgb(210, 210, 166);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+}
+
+.img > img {
+  width: 100%;
+}
+
+.images > .img > p {
+  /* color: white; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  background: rgb(210, 210, 166);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
+}
