@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+	<style>
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		body {
+			background-color: #003399;
+			color: white;
+		}
+
+		.container {
+			width: 35%;
+			/* adjust self */
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			/* adjust child */
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		form,
+		input[type="text"],
+		button {
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		form,
+		.input-text,
+		.button-group {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.input-text,
+		.button-group {
+			gap: 8px;
+		}
+
+		.input-text>p {
+			align-self: flex-end;
+		}
+
+		.button-group>p {
+			align-self: center;
+		}
+
+		.button-group>p>span {
+			font-style: italic;
+		}
+
+		input[type="text"],
+		button {
+			padding: 12px;
+			border-radius: 8px;
+			border: none;
+		}
+
+		input[type="text"] {
+			padding-left: 42px;
+			background-color: transparent;
+			border: 2px solid white;
+		}
+
+		.i-g {
+			position: relative;
+		}
+
+		.i-g>i {
+			position: absolute;
+			transform: translate(100%, 75%);
+		}
+
+		.button-group button {
+			color: white;
+		}
+
+		.login {
+			background-color: transparent;
+			border: 2px solid yellowgreen;
+		}
+
+		.google {
+			background-color: black;
+		}
+	</style>
+
+	<div class="container">
+		<h1>Login</h1>
+		<p>Please enter your Login and your Password</p>
+		<form>
+			<div class="input-text">
+				<div class="i-g">
+					<i class="fa fa-user"></i>
+					<input type="text" placeholder="Usename or Email">
+				</div>
+				<div class="i-g">
+					<i class="fa fa-lock"></i>
+					<input type="text" placeholder="Password">
+				</div>
+				<p>Forgot password?</p>
+			</div>
+			<div class="button-group">
+				<button class="login">Login</button>
+				<button class="google">Or, sign-in with Google</button>
+				<p>Not a member yet? <span>Register!</span></p>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
