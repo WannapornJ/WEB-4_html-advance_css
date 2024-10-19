@@ -1,61 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <title>Caramel Macarons</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(90deg, #d4a1b3 50%, #926e7f 50%);
+      }
 
-<head>
-	<title>Caramel Macarons</title>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-	<style>
-		body {
-			margin: 0;
-			font-family: 'Poppins', sans-serif;
-			background: linear-gradient(90deg, #d4a1b3 50%, #926e7f 50%);
-		}
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
 
-		.container {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			min-height: 100vh;
-		}
+      .content {
+        background-color: #b691a2;
+        padding: 30px 32px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        position: relative;
+        height: 450px;
+        /* To position elements within */
+      }
 
-		.content {
-			background-color: #b691a2;
-			padding: 30px 32px;
-			border-radius: 10px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			display: flex;
-			position: relative;
-			height: 450px;
-			/* To position elements within */
-		}
+      .image-container {
+        margin-right: 80px;
+      }
 
-		.image-container {
-			margin-right: 80px;
-		}
+      h1 {
+        font-size: 3em;
+        font-weight: 700;
+      }
+    </style>
+  </head>
 
-		h1 {
-			font-size: 3em;
-			font-weight: 700;
-		}
-	</style>
-</head>
-
-<body>
-	<div class="container">
-		<div class="content" style="display: flex; align-items: center; gap: 16px;">
-			<div class="left">
-				<h1>Caramel</h1>
-			</div>
-			<div class="center" style="position: relative;">
-				<div class="circle" style="width: 300px; height: 300px; background: #926e7f; border-radius: 50%;"></div>
-				<img src="https://i.pinimg.com/236x/f4/97/85/f497858b7dbe35591c89e1cdba192fdc.jpg" alt="macarons"
-					style="position: absolute;top: 0; left: 50%; width: 150px; height: 170%; transform: translate(-50%, -25%); object-fit: cover;">
-			</div>
-			<div class="right">
-				<h1>Macarons</h1>
-			</div>
-		</div>
-	</div>
-</body>
-
+  <body>
+    <div style="width: 100%">
+      <ul
+        style="
+          display: flex;
+          width: 45%;
+          justify-content: space-between;
+          margin: auto;
+          list-style-type: none;
+        "
+      >
+        <li>
+          <a style="text-decoration: none" href="./index.html" target="_blank"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            style="text-decoration: none"
+            href="./caramel_macarons.html"
+            target="_blank"
+            >Position</a
+          >
+        </li>
+        <li>
+          <a
+            style="text-decoration: none"
+            href="./hero_page.html"
+            target="_blank"
+            >Hero</a
+          >
+        </li>
+        <li>
+          <a
+            style="text-decoration: none"
+            href="./login-chat.html"
+            target="_blank"
+            >Login with ChatGPT</a
+          >
+        </li>
+        <li>
+          <a
+            style="text-decoration: none"
+            href="./login-self.html"
+            target="_blank"
+            >Login by self</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div
+        class="content"
+        style="display: flex; align-items: center; gap: 16px"
+      >
+        <div class="left">
+          <h1>Caramel</h1>
+        </div>
+        <div class="center" style="position: relative">
+          <div
+            class="circle"
+            style="
+              width: 300px;
+              height: 300px;
+              background: #926e7f;
+              border-radius: 50%;
+            "
+          ></div>
+          <img
+            src="https://i.pinimg.com/236x/f4/97/85/f497858b7dbe35591c89e1cdba192fdc.jpg"
+            alt="macarons"
+            style="
+              position: absolute;
+              top: 0;
+              left: 50%;
+              width: 150px;
+              height: 170%;
+              transform: translate(-50%, -25%);
+              object-fit: cover;
+            "
+          />
+        </div>
+        <div class="right">
+          <h1>Macarons</h1>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
